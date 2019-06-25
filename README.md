@@ -10,9 +10,7 @@ The following versions are available:
 
 |**Tag**|**Description**|
 | ------ | ------ |
-| **0.0.7**| ssl enabled (*)|
-| 0.0.8| Pending to be published at DockerHub: ESMOtoken-key bug solved|
-| ...| ...| 
+| **1.0.0**| https://github.com/ec-esmo/GW2GW| 
 
 (*) Remember to update your *msMetadaList.json* and the *LGW_config.json* with the related https urls.
 
@@ -36,7 +34,7 @@ The following versions are available:
 
 ```
     GW2GW:
-        image: mvjatos/gw2gw:0.0.7
+        image: mvjatos/gw2gw:1.0.0
         environment:
             - KEYSTORE_PATH=/resources/testKeys/keystore.jks
             - KEY_PASS=selfsignedpass
@@ -47,8 +45,8 @@ The following versions are available:
             - SIGNING_SECRET=QjG+wP1CbAH2z4PWlWIDkxP4oRlgK2vos5/jXFfeBw8=
             - ASYNC_SIGNATURE=true
             - RSA_CIPHERED_ESMOTOKEN=false   #(ESMOToken with or without encryption)
-            - CONFIGURATION_MANAGER_URL=http://ConfManager:8080
-            - SESSION_MANAGER_URL=http://SessionManager:8080
+            - CONFIGURATION_MANAGER_URL=https://vm.esmo-project.eu:8083
+            - SESSION_MANAGER_URL=http://SessionManager:8090
             - SSL_KEYSTORE_PATH=/resources/keystoreatos.jks
             - SSL_STORE_PASS=AtosCert1
             - SSL_KEY_PASS=AtosCert1
@@ -58,7 +56,7 @@ The following versions are available:
         volumes:
             - /ESMO/GW2GW/resources:/resources
         links:
-            - ConfManager:ConfManager
+            - ConfManager:vm.esmo-project.eu
         ports:
           - 8050:8050
           - 8053:8053
