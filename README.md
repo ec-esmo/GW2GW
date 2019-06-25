@@ -4,7 +4,7 @@ Gateway to gateway microservice
 
 **Docker container** 
 
-Find the related image at DockerHub: mvjatos/gw2gw (check for the current version)
+Find the related image at DockerHub: *mvjatos/gw2gw* (check for the current version)
 
 The following versions are available:
 
