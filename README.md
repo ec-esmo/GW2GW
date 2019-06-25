@@ -10,7 +10,7 @@ The following versions are available:
 
 |**Tag**|**Description**|
 | ------ | ------ |
-| **1.0.0**| https://github.com/ec-esmo/GW2GW| 
+| **1.0.0**| Published at GitHub| 
 
 (*) Remember to update your *msMetadaList.json* and the *LGW_config.json* with the related https urls.
 
