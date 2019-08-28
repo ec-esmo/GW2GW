@@ -11,6 +11,7 @@ The following versions are available:
 |**Tag**|**Description**|
 | ------ | ------ |
 | **1.0.0**| Published at GitHub| 
+| **1.0.1**| Headers updated|
 
 (*) Remember to update your *msMetadaList.json* and the *LGW_config.json* with the related https urls.
 
